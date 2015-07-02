@@ -1,0 +1,1 @@
+<div class="row"> <h3>Mes favoris</h3> <div ng-repeat="f in favoris track by $index" class="col-md-4"> <p>{{f.title}}</p> <button type="button" class="btn btn-danger btn-xs" ng-click="deleteFavori(f)">X</button> <a ng-href="#/film/{{f.id}}"> <img ng-src="{{f.poster_path | urlPoster}}"> </a> </div> </div>
